@@ -5,11 +5,11 @@ d = int(input("Введите конец интервала "))
 a = []
 
 for i in range(5):
-    a.append(float(input("Введите элемент списка " + str(i) + ' - ')))
+    a.append(float(input(f'Введите элемент списка {i} - ')))
 
 print('Максимальный элемент ' , max(a, key=abs))
 print('Индекс максимального элемента ' , a.index(max(a, key=abs)))
-for i in range(len(a)):
+for i in a:
     if (a[i] > 0.):
         k = i
         break
